@@ -48,3 +48,17 @@ Once you know the pool size `R`and the password length `L`, the last step to d
 - For *Incorrect*, we have `R = 52` and `L = 9`, so `E = 9 * log2(52) ≈ 9 * 5.700 ≈ 51.3 bits`;
 - For *IncoRRect77*, we have `R = 62` and `L = 11`, so `E = 11 * log2(62) ≈ 11 * 5.954 ≈ 65.5 bits`;
 - For *IncoRRect77$%&*, we have `R = 94` and `L = 14`, so `E = 14 * log2(94) ≈ 14 * 6.5545 ≈ 91.76 bits`
+
+## ***How to contribute?*** :sparkles:
+
+- Clone the Repository
+- Create an issue and wait for the assignment by the Mantainers.
+- After the issue is assigned to you add your solution to the respective project folder, along with the problem statement file.
+- Now, you are ready to make a pull request.
+- Hola !! You made your PR and wait for the Mantainer to check the Plagarisim and project working.
+
+## **Note** :sparkles:
+
+- All contributors who have followed the rules to contribute get successfully merged PR. Don't forget to follow!
+- Have some patience to get successfully merged PR. Keep Patience!
+- If you are following a Youtube video, make sure you do some changes and ***not submit the exact code and UI***
