@@ -1,3 +1,9 @@
+<p align="center"> 
+<img alt="GitHub pull-requests" src="https://img.shields.io/github/issues-pr/Git-For-Geeks/Password-Strength-Checker">
+<img alt="GitHub forks" src="https://img.shields.io/github/forks/Git-For-Geeks/Password-Strength-Checker"> 
+<img alt="contributors" src="https://img.shields.io/github/contributors/Git-For-Geeks/Password-Strength-Checker"> 
+<img alt="GitHub stars" src="https://img.shields.io/github/stars/Git-For-Geeks/Password-Strength-Checker"> </p>
+
 # Password-Strength-Checker
 
 Password Entropy signifies a **measure of password strength**, i.e., how effective a password is against adversaries who try to guess it or use a **brute-force attack**.
