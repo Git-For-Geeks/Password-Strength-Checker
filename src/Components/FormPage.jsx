@@ -65,37 +65,53 @@ const FormPage = () => {
         var R = 0;
 
         /* ONLY DIGITS Condition */
-        if (lowerCaseCharacters === 0 && upperCaseCharacters === 0 && specialCharacters === 0 && digits >= 1) {
+        if (lowerCaseCharacters === 0 && upperCaseCharacters === 0 && specialCharacters === 0 && digits === 0) {
+            R = 0;
+        }
+        else if (lowerCaseCharacters === 0 && upperCaseCharacters === 0 && specialCharacters === 0 && digits >= 1) {
             R = 10;
-        } /* ONLY Lowercase Condition */
-        else if (lowerCaseCharacters >= 1 && upperCaseCharacters === 0 && specialCharacters === 0 && digits === 0) {
-            R = 26;
-        } /* ONLY Uppercase Condition */
-        else if (lowerCaseCharacters === 0 && upperCaseCharacters >= 1 && specialCharacters === 0 && digits === 0) {
-            R = 26;
-        }/* ONLY Special Characters Condition */
-        else if (lowerCaseCharacters === 0 && upperCaseCharacters === 0 && specialCharacters >= 0 && digits === 0) {
+        }
+        else if (lowerCaseCharacters === 0 && upperCaseCharacters === 0 && specialCharacters >= 1 && digits === 0) {
             R = 32;
-        }/* ONLY DIGITS + Lowercase Condition */
-        else if (lowerCaseCharacters >= 1 && upperCaseCharacters === 0 && specialCharacters === 0 && digits >= 1) {
-            R = 36;
-        } /* ONLY DIGITS + Uppercase Condition */
-        else if (lowerCaseCharacters === 0 && upperCaseCharacters >= 1 && specialCharacters === 0 && digits >= 1) {
-            R = 36;
-        } /* ONLY DIGITS + Special Chars Condition */
+        }
         else if (lowerCaseCharacters === 0 && upperCaseCharacters === 0 && specialCharacters >= 1 && digits >= 1) {
             R = 42;
-        }/* ONLY Lowercase + Uppercase Condition */
-        else if (lowerCaseCharacters >= 1 && upperCaseCharacters >= 1 && specialCharacters === 0 && digits === 0) {
+        }
+        else if (lowerCaseCharacters === 0 && upperCaseCharacters >= 1 && specialCharacters === 0 && digits === 0) {
+            R = 26;
+        }
+        else if (lowerCaseCharacters === 0 && upperCaseCharacters >= 1 && specialCharacters === 0 && digits >= 1) {
+            R = 36;
+        }
+        else if (lowerCaseCharacters === 0 && upperCaseCharacters >= 1 && specialCharacters >= 1 && digits === 0) {
+            R = 58;
+        }
+        else if (lowerCaseCharacters === 0 && upperCaseCharacters >= 1 && specialCharacters >= 1 && digits >= 1) {
+            R = 68;
+        }
+        else if (lowerCaseCharacters >= 1 && upperCaseCharacters === 0 && specialCharacters === 0 && digits === 0) {
+            R = 26;
+        }
+        else if (lowerCaseCharacters >= 1 && upperCaseCharacters === 0 && specialCharacters === 0 && digits >= 1) {
+            R = 36;
+        }
+        else if (lowerCaseCharacters >= 1 && upperCaseCharacters === 0 && specialCharacters >= 1 && digits === 0) {
+            R = 58;
+        }
+        else if (lowerCaseCharacters >= 1 && upperCaseCharacters === 0 && specialCharacters >= 1 && digits >= 1) {
+            R = 68;
+        }
+        else if (lowerCaseCharacters >= 1 && upperCaseCharacters  >= 1 && specialCharacters === 0 && digits === 0) {
             R = 52;
-        }/* ONLY Alphanumeric + Uppercase Condition */
-        else if (lowerCaseCharacters >= 1 && upperCaseCharacters >= 1 && specialCharacters === 0 && digits >= 1) {
+        }
+        else if (lowerCaseCharacters >= 1 && upperCaseCharacters === 0 && specialCharacters >= 1 && digits >= 1) {
             R = 62;
-        }/* ONLY Alphanumeric + Uppercase + Special Symbols Condition */
+        }
+        else if (lowerCaseCharacters >= 1 && upperCaseCharacters >= 1 && specialCharacters >= 1 && digits === 0) {
+            R = 84;
+        }
         else if (lowerCaseCharacters >= 1 && upperCaseCharacters >= 1 && specialCharacters >= 1 && digits >= 1) {
             R = 94;
-        } else {
-            R = 40;
         }
         console.log(R, L);
         console.log((L * Math.log2(R)).toFixed(3));
